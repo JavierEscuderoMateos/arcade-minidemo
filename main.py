@@ -17,8 +17,8 @@ SPRITE_SCALING_PLAYER = 0.5
 SPRITE_SCALING_COIN = .25
 COIN_COUNT = 50
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 1200
+SCREEN_HEIGHT = 800
 SCREEN_TITLE = "Sprite Collect Coins Example"
 
 
@@ -41,7 +41,7 @@ class MyGame(arcade.Window):
         # Don't show the mouse cursor
         self.set_mouse_visible(False)
 
-        arcade.set_background_color(arcade.color.AMAZON)
+        arcade.set_background_color(arcade.color.SPANISH_CRIMSON)
 
     def setup(self):
         """ Set up the game and initialize the variables. """
@@ -55,7 +55,7 @@ class MyGame(arcade.Window):
 
         # Set up the player
         # Character image from kenney.nl
-        img = ":resources:images/animated_characters/female_person/femalePerson_idle.png"
+        img = ":resources:images/animated_characters/zombie/zombie_idle.png"
         self.player_sprite = arcade.Sprite(img, SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 50
